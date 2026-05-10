@@ -20,7 +20,7 @@ class CatCafeTest {
         CatCafe cafe = new CatCafe();
 
         FelineOverLord cat =
-            new FelineOverLord("Luna", 4);
+            new FelineOverLord("Yuna", 4);
 
         cafe.addCat(cat);
 
@@ -47,7 +47,7 @@ class CatCafeTest {
         CatCafe cafe = new CatCafe();
 
         FelineOverLord result =
-            cafe.getCatByName("Ghost");
+            cafe.getCatByName("Cookie");
 
         assertNull(result);
     }
@@ -76,7 +76,7 @@ class CatCafeTest {
         CatCafe cafe = new CatCafe();
 
         FelineOverLord cat =
-            new FelineOverLord("Tiger", 6);
+            new FelineOverLord("Miauzi", 6);
 
         cafe.addCat(cat);
 
@@ -110,7 +110,7 @@ class CatCafeTest {
     void givenNoMatchingWeight_whenSearchingByWeight_thenReturnNull() {
         CatCafe cafe = new CatCafe();
 
-        cafe.addCat(new FelineOverLord("Luna", 3));
+        cafe.addCat(new FelineOverLord("yuna", 3));
 
         FelineOverLord result =
             cafe.getCatByWeight(10, 20);
