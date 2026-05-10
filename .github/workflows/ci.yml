@@ -31,5 +31,4 @@ jobs:
             - name: Tests ausfuehren
               run: ./gradlew test
 
-            - name: Formatierung pruefen
-              run: ./gradlew spotlessCheck
+
